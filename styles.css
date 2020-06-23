@@ -1,0 +1,132 @@
+body{
+    background-color: rgb(242,242,242);
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-gap: 30%;
+    position: fixed;
+}
+
+/* Left hand side */
+.leftBlueArea {
+    background-color: rgb(0,114,198);
+    margin: 0;
+    height: 100%;
+    grid-column: 1 / 2;
+}
+
+.leftWhiteLogo {
+    width: 60%;
+    margin-top: 200px;
+    margin-left: 15%;
+}    
+/* Left hand side */
+           
+/* *************************************************************************** */
+
+/* media queries */
+
+  @media screen and (max-width: 550px), (max-height:550px) { 
+    body {
+        grid-template-columns: 100px 200px;
+        grid-gap: 10%;
+    }
+
+    .leftWhiteLogo {
+        margin-top: 100px;
+    }    
+
+    .blue-icon {
+        width: 20px;
+    }
+
+    #blue-logo {
+        margin-top: 8px;
+    }
+
+    #head {
+       margin-top: 80px;
+       height: 50px;
+    }
+
+    #rightWhiteArea {
+        grid-template-rows: 50px 100px;
+
+    }
+
+    .h1 {
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    .form{
+        margin-top: 70px;
+        margin-left: 2px;
+    }
+}
+
+
+/* media queries */
+
+/* *************************************************************************** */
+
+/* right area */
+
+.rightWhiteArea {
+    grid-column: 2 / 3;
+    /* background-color: tomato; */
+    height: 100%;
+    display: grid;
+    grid-template-rows: 40% 20%;
+}
+
+.header {
+    grid-row: 1/2;
+    /* background-color: yellow; */
+    margin-top: 120px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(0,114,198);
+}
+
+.blue-icon {
+    float: left;
+    margin-top: 38px;
+}
+
+span{
+    font-size:2vw;
+}
+
+form{
+    grid-row: 2/3;
+    /* background-color: darkgoldenrod; */
+    margin-left: 7px;
+}
+
+input{
+    margin-bottom: 7px;
+}
+
+label {
+    color: gray;
+}
+
+.arrow {
+    width: 10px;
+    padding-right: 2px;
+}
+
+button {
+   border: none;
+   color: rgb(0,114,198);
+   background-color: transparent;
+}
+
+/* right area */
+
+/* *************************************************************************** */
